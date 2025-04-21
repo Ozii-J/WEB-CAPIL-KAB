@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri - Dinas Kependudukan dan Pencatatan Sipil</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header (sama seperti halaman utama) -->
+    <header class="header">
+        <div class="top-header">
+            <div class="logo-container">
+                <img src="madiun_logo.png" alt="Logo Disdukcapil" class="logo">
+                <div class="site-title">DINAS KEPENDUDUKAN DAN PENCATATAN SIPIL KABUPATEN MADIUN</div>
+            </div>
+            <div class="contact-info">
+                <p>Email: disdukcapil@contoh.go.id | Telp: (0351) 467327</p>
+            </div>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="layanan.html">Layanan</a></li>
+                <li><a href="informasi.html">Informasi</a></li>
+                <li><a href="galeri.html" class="active">Galeri</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <p><a href="index.html">Beranda</a> / Galeri</p>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="page-content">
+        <div class="container">
+            <h1 class="page-title">Galeri</h1>
+            
+            <div class="gallery-tabs">
+                <div class="tab-nav">
+                    <button class="tablink active" onclick="filterGallery('all')">Semua</button>
+                    <button class="tablink" onclick="filterGallery('foto')">Foto</button>
+                    <button class="tablink" onclick="filterGallery('video')">Video</button>
+                </div>
+                
+                <div class="gallery-container">
+                    <div class="gallery-item foto">
+                        <img src="berita 1.png" alt="Kegiatan Sosialisasi">
+                        <div class="gallery-overlay">
+                            <div class="gallery-title">Sosialisasi Layanan Administrasi Kependudukan</div>
+                            <div class="gallery-date">15 April 2025</div>
+                            <a href="berita 1.png" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item foto">
+                        <img src="gallery2.jpg" alt="Pelayanan E-KTP">
+                        <div class="gallery-overlay">
+                            <div class="gallery-title">Pelayanan E-KTP di Kantor Disdukcapil</div>
+                            <div class="gallery-date">10 April 2025</div>
+                            <a href="gallery2.jpg" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item video">
+                        <div class="video-thumbnail">
+                            <img src="video1-thumb.jpg" alt="Video Tutorial E-KTP">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-title">Tutorial Pembuatan E-KTP</div>
+                            <div class="gallery-date">5 April 2025</div>
+                            <a href="https://www.youtube.com/watch?v=example" class="gallery-zoom" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item foto">
+                        <img src="gallery3.jpg" alt="Rapat Koordinasi">
+                        <div class="gallery-overlay">
+                            <div class="gallery-title">Rapat Koordinasi dengan Camat dan Lurah</div>
+                            <div class="gallery-date">3 April 2025</div>
+                            <a href="gallery3.jpg" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item video">
+                        <div class="video-thumbnail">
+                            <img src="video2-thumb.jpg" alt="Video Profil Disdukcapil">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-title">Profil Dinas Kependudukan dan Pencatatan Sipil</div>
+                            <div class="gallery-date">28 Maret 2025</div>
+                            <a href="https://www.youtube.com/watch?v=example2" class="gallery-zoom" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item foto">
+                        <img src="gallery4.jpg" alt="Pelayanan Keliling">
+                        <div class="gallery-overlay">
+                            <div class="gallery-title">Pelayanan Keliling di Kelurahan Taman</div>
+                            <div class="gallery-date">25 Maret 2025</div>
+                            <a href="gallery4.jpg" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item foto">
+                        <img src="gallery5.jpg" alt="Kunjungan Kerja">
+                        <div class="gallery-overlay">
+                            <div class="gallery-title">Kunjungan Kerja Walikota ke Disdukcapil</div>
+                            <div class="gallery-date">20 Maret 2025</div>
+                            <a href="gallery5.jpg" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item video">
+                        <div class="video-thumbnail">
+                            <img src="video3-thumb.jpg" alt="Video Tutorial Akta Kelahiran">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-title">Tutorial Pengurusan Akta Kelahiran</div>
+                            <div class="gallery-date">15 Maret 2025</div>
+                            <a href="https://www.youtube.com/watch?v=example3" class="gallery-zoom" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (sama seperti halaman utama) -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Tentang Kami</h3>
+                <p>Dinas Kependudukan dan Pencatatan Sipil merupakan unsur pelaksana Pemerintah Daerah di bidang Kependudukan dan Pencatatan Sipil yang dipimpin oleh Kepala Dinas dan berkedudukan di bawah Walikota melalui Sekretaris Daerah.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Link Cepat</h3>
+                <a href="index.html">Beranda</a>
+                <a href="profil.html">Profil</a>
+                <a href="layanan.html">Layanan</a>
+                <a href="informasi.html">Informasi</a>
+                <a href="galeri.html">Galeri</a>
+                <a href="kontak.html">Kontak</a>
+            </div>
+            <div class="footer-col">
+                <h3>Kontak Kami</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Jl. Contoh No. 123, Kota</p>
+                <p><i class="fas fa-phone"></i> (0351) 467327</p>
+                <p><i class="fas fa-envelope"></i> disdukcapil@contoh.go.id</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 Dinas Kependudukan dan Pencatatan Sipil. Hak Cipta Dilindungi.
+        </div>
+    </footer>
+
+    <script>
+        function filterGallery(category) {
+            var items = document.getElementsByClassName("gallery-item");
+            var tablinks = document.getElementsByClassName("tablink");
+            
+            // Remove active class from all tablinks
+            for (var i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+            
+            // Add active class to the clicked button
+            event.currentTarget.classList.add("active");
+            
+            if (category === "all") {
+                for (var i = 0; i < items.length; i++) {
+                    items[i].style.display = "block";
+                }
+            } else {
+                for (var i = 0; i < items.length; i++) {
+                    if (items[i].classList.contains(category)) {
+                        items[i].style.display = "block";
+                    } else {
+                        items[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi - Dinas Kependudukan dan Pencatatan Sipil</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header (sama seperti halaman utama) -->
+    <header class="header">
+        <div class="top-header">
+            <div class="logo-container">
+                <img src="madiun_logo.png" alt="Logo Disdukcapil" class="logo">
+                <div class="site-title">DINAS KEPENDUDUKAN DAN PENCATATAN SIPIL KABUPATEN MADIUN</div>
+            </div>
+            <div class="contact-info">
+                <p>Email: disdukcapil@contoh.go.id | Telp: (0351) 467327</p>
+            </div>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="layanan.html">Layanan</a></li>
+                <li><a href="informasi.html" class="active">Informasi</a></li>
+                <li><a href="galeri.html">Galeri</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <p><a href="index.html">Beranda</a> / Informasi</p>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="page-content">
+        <div class="container">
+            <h1 class="page-title">Informasi</h1>
+            
+            <div class="info-tabs">
+                <div class="tab-nav">
+                    <button class="tablink active" onclick="openTab('pengumuman')">Pengumuman</button>
+                    <button class="tablink" onclick="openTab('berita')">Berita</button>
+                    <button class="tablink" onclick="openTab('agenda')">Agenda</button>
+                    <button class="tablink" onclick="openTab('unduhan')">Unduhan</button>
+                </div>
+                
+                <div id="pengumuman" class="tab-content active">
+                    <div class="announcement-list">
+                        <div class="announcement-item">
+                            <div class="announcement-date">17 April 2025</div>
+                            <h3>Jadwal Pelayanan Selama Bulan Ramadhan</h3>
+                            <p>Diberitahukan kepada seluruh masyarakat bahwa selama bulan Ramadhan, jadwal pelayanan Disdukcapil adalah sebagai berikut:</p>
+                            <ul>
+                                <li>Senin - Kamis: 08.00 - 14.00 WIB</li>
+                                <li>Jumat: 08.00 - 11.30 WIB</li>
+                            </ul>
+                            <a href="#" class="read-more">Baca Selengkapnya</a>
+                        </div>
+                        
+                        <div class="announcement-item">
+                            <div class="announcement-date">10 April 2025</div>
+                            <h3>Pengumuman Perekaman E-KTP Keliling</h3>
+                            <p>Diberitahukan kepada warga Kecamatan Kartoharjo yang belum melakukan perekaman E-KTP, akan dilaksanakan perekaman E-KTP keliling pada:</p>
+                            <ul>
+                                <li>Tanggal: 20-22 April 2025</li>
+                                <li>Waktu: 08.00 - 15.00 WIB</li>
+                                <li>Tempat: Balai Kecamatan Kartoharjo</li>
+                            </ul>
+                            <a href="#" class="read-more">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="berita" class="tab-content">
+                    <div class="news-list">
+                        <div class="news-item">
+                            <img src="news1.jpg" alt="Berita 1" class="news-image">
+                            <div class="news-content">
+                                <div class="news-date">17 April 2025</div>
+                                <h3>Sosialisasi Layanan Adminduk di Kelurahan Taman</h3>
+                                <p>Dinas Kependudukan dan Pencatatan Sipil mengadakan sosialisasi layanan administrasi kependudukan di Kelurahan Taman. Kegiatan ini dihadiri oleh Camat Taman, Lurah, dan perwakilan RT/RW setempat.</p>
+                                <a href="#" class="read-more">Baca Selengkapnya</a>
+                            </div>
+                        </div>
+                        
+                        <div class="news-item">
+                            <img src="news2.jpg" alt="Berita 2" class="news-image">
+                            <div class="news-content">
+                                <div class="news-date">15 April 2025</div>
+                                <h3>Launching Layanan Administrasi Kependudukan Online</h3>
+                                <p>Disdukcapil meluncurkan sistem layanan administrasi kependudukan online untuk memudahkan masyarakat. Sistem ini dapat diakses melalui website dan aplikasi mobile.</p>
+                                <a href="#" class="read-more">Baca Selengkapnya</a>
+                            </div>
+                        </div>
+                        
+                        <div class="news-item">
+                            <img src="news3.jpg" alt="Berita 3" class="news-image">
+                            <div class="news-content">
+                                <div class="news-date">10 April 2025</div>
+                                <h3>Perekaman KTP Elektronik Keliling di Kecamatan Kartoharjo</h3>
+                                <p>Tim jemput bola Disdukcapil melakukan perekaman KTP elektronik di Kecamatan Kartoharjo. Kegiatan ini bertujuan untuk memudahkan warga yang belum melakukan perekaman E-KTP.</p>
+                                <a href="#" class="read-more">Baca Selengkapnya</a>
+                            </div>
+                        </div>
+
+                        <div class="news-item">
+                            <img src="news4.jpg" alt="Berita 4" class="news-image">
+                            <div class="news-content">
+                                <div class="news-date">10 April 2025</div>
+                                <h3>Perekaman KTP Elektronik Keliling di Kecamatan Kartoharjo</h3>
+                                <p>Tim jemput bola Disdukcapil melakukan perekaman KTP elektronik di Kecamatan Kartoharjo. Kegiatan ini bertujuan untuk memudahkan warga yang belum melakukan perekaman E-KTP.</p>
+                                <a href="#" class="read-more">Baca Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="agenda" class="tab-content">
+                    <div class="agenda-list">
+                        <div class="agenda-item">
+                            <div class="agenda-date">
+                                <div class="date-num">20</div>
+                                <div class="date-month">Apr</div>
+                            </div>
+                            <div class="agenda-content">
+                                <h3>Perekaman E-KTP Keliling di Kecamatan Kartoharjo</h3>
+                                <div class="agenda-meta">
+                                    <span><i class="fas fa-clock"></i> 08.00 - 15.00 WIB</span>
+                                    <span><i class="fas fa-map-marker-alt"></i> Balai Kecamatan Kartoharjo</span>
+                                </div>
+                                <p>Perekaman E-KTP keliling untuk warga Kecamatan Kartoharjo yang belum melakukan perekaman E-KTP.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="agenda-item">
+                            <div class="agenda-date">
+                                <div class="date-num">25</div>
+                                <div class="date-month">Apr</div>
+                            </div>
+                            <div class="agenda-content">
+                                <h3>Rapat Koordinasi Penyelenggaraan Administrasi Kependudukan</h3>
+                                <div class="agenda-meta">
+                                    <span><i class="fas fa-clock"></i> 09.00 - 12.00 WIB</span>
+                                    <span><i class="fas fa-map-marker-alt"></i> Ruang Rapat Disdukcapil</span>
+                                </div>
+                                <p>Rapat koordinasi dengan Camat, Lurah, dan Kepala Desa se-Kota untuk membahas penyelenggaraan administrasi kependudukan.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="agenda-item">
+                            <div class="agenda-date">
+                                <div class="date-num">30</div>
+                                <div class="date-month">Apr</div>
+                            </div>
+                            <div class="agenda-content">
+                                <h3>Sosialisasi Aplikasi Mobile Disdukcapil</h3>
+                                <div class="agenda-meta">
+                                    <span><i class="fas fa-clock"></i> 10.00 - 12.00 WIB</span>
+                                    <span><i class="fas fa-map-marker-alt"></i> Aula Balai Kota</span>
+                                </div>
+                                <p>Sosialisasi penggunaan aplikasi mobile Disdukcapil untuk mempermudah layanan administrasi kependudukan.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="unduhan" class="tab-content">
+                    <div class="download-list">
+                        <div class="download-category">
+                            <h3>Formulir</h3>
+                            <div class="download-items">
+                                <div class="download-item">
+                                    <div class="download-icon">
+                                        <i class="fas fa-file-pdf"></i>
+                                    </div>
+                                    <div class="download-content">
+                                        <h4>Formulir Permohonan KTP Elektronik</h4>
+                                        <p>Ukuran: 156 KB | Format: PDF</p>
+                                        <a href="#" class="btn-download">Unduh</a>
+                                    </div>
+                                </div>
+                                <div class="download-item">
+                                    <div class="download-icon">
+                                        <i class="fas fa-file-pdf"></i>
+                                    </div>
+                                    <div class="download-content">
+                                        <h4>Formulir Permohonan Kartu Keluarga</h4>
+                                        <p>Ukuran: 178 KB | Format: PDF</p>
+                                        <a href="#" class="btn-download">Unduh</a>
+                                    </div>
+                                </div>
+                                <div class="download-item">
+                                    <div class="download-icon">
+                                        <i class="fas fa-file-pdf"></i>
+                                    </div>
+                                    <div class="download-content">
+                                        <h4>Formulir Permohonan Akta Kelahiran</h4>
+                                        <p>Ukuran: 142 KB | Format: PDF</p>
+                                        <a href="#" class="btn-download">Unduh</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="download-category">
+                            <h3>Regulasi</h3>
+                            <div class="download-items">
+                                <div class="download-item">
+                                    <div class="download-icon">
+                                        <i class="fas fa-file-pdf"></i>
+                                    </div>
+                                    <div class="download-content">
+                                        <h4>UU No. 24 Tahun 2013 tentang Administrasi Kependudukan</h4>
+                                        <p>Ukuran: 3.2 MB | Format: PDF</p>
+                                        <a href="#" class="btn-download">Unduh</a>
+                                    </div>
+                                </div>
+                                <div class="download-item">
+                                    <div class="download-icon">
+                                        <i class="fas fa-file-pdf"></i>
+                                    </div>
+                                    <div class="download-content">
+                                        <h4>Perda No. X Tahun 20XX tentang Penyelenggaraan Administrasi Kependudukan</h4>
+                                        <p>Ukuran: 2.1 MB | Format: PDF</p>
+                                        <a href="#" class="btn-download">Unduh</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (sama seperti halaman utama) -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Tentang Kami</h3>
+                <p>Dinas Kependudukan dan Pencatatan Sipil merupakan unsur pelaksana Pemerintah Daerah di bidang Kependudukan dan Pencatatan Sipil yang dipimpin oleh Kepala Dinas dan berkedudukan di bawah Walikota melalui Sekretaris Daerah.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Link Cepat</h3>
+                <a href="index.html">Beranda</a>
+                <a href="profil.html">Profil</a>
+                <a href="layanan.html">Layanan</a>
+                <a href="informasi.html">Informasi</a>
+                <a href="galeri.html">Galeri</a>
+                <a href="kontak.html">Kontak</a>
+            </div>
+            <div class="footer-col">
+                <h3>Kontak Kami</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Jl. Contoh No. 123, Kota</p>
+                <p><i class="fas fa-phone"></i> (0351) 467327</p>
+                <p><i class="fas fa-envelope"></i> disdukcapil@contoh.go.id</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 Dinas Kependudukan dan Pencatatan Sipil. Hak Cipta Dilindungi.
+        </div>
+    </footer>
+
+    <script>
+        function openTab(tabName) {
+            var i, tabcontent, tablinks;
+            
+            // Hide all tab content
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.remove("active");
+            }
+            
+            // Remove active class from all tablinks
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+            
+            // Show the specific tab content
+            document.getElementById(tabName).classList.add("active");
+            
+            // Add active class to the clicked button
+            event.currentTarget.classList.add("active");
+        }
+    </script>
+</body>
+</html>

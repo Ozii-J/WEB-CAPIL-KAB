@@ -1427,3 +1427,75 @@ img {
     opacity: 0;
     transition: opacity 0.5s ease;
 }
+/* Data Visualization Preview Section */
+.data-visualization-preview {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.data-viz-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.data-viz-description {
+    flex: 1;
+    padding-right: 30px;
+}
+
+.data-viz-description p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.data-viz-preview {
+    display: flex;
+    gap: 20px;
+}
+
+.preview-chart {
+    background-color: #f0f4f8;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 150px;
+    transition: transform 0.3s ease;
+}
+
+.preview-chart:hover {
+    transform: translateY(-10px);
+}
+
+.preview-chart i {
+    font-size: 40px;
+    color: #3498db;
+    margin-bottom: 15px;
+}
+
+.preview-chart h3 {
+    font-size: 16px;
+    color: #1a5276;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .data-viz-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .data-viz-description {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .data-viz-preview {
+        justify-content: center;
+    }
+}

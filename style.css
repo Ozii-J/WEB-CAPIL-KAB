@@ -1531,3 +1531,56 @@ img {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
+
+/* Perbaikan navigasi aktif */
+.nav ul li a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+    padding-bottom: 5px;
+}
+
+.nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #3498db;
+    transition: width 0.3s;
+}
+
+.nav ul li a:hover::after,
+.nav ul li a.active::after {
+    width: 100%;
+}
+
+.nav ul li a.active {
+    color: #3498db;
+}
+
+/* Tambahan untuk konsistensi navigasi */
+.nav ul li a:hover {
+    color: #3498db;
+}
+
+/* Perbaikan untuk responsivitas navigasi */
+@media (max-width: 768px) {
+    .nav ul li a {
+        display: block;
+        padding: 10px 0;
+    }
+    
+    .nav ul li a::after {
+        display: none;
+    }
+    
+    .nav ul li a.active {
+        background-color: rgba(52, 152, 219, 0.1);
+        border-left: 3px solid #3498db;
+        padding-left: 10px;
+    }
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualisasi Data Kependudukan - Dinas Kependudukan dan Pencatatan Sipil</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .visualization-section {
+            padding: 2rem 0;
+            background-color: #f9f9f9;
+        }
+        .visualization-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        .viz-categories {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+        }
+        .viz-category {
+            flex: 1;
+            text-align: center;
+            padding: 1rem;
+            background-color: #ffffff;
+            border-radius: 8px;
+            margin: 0 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .viz-category:hover {
+            transform: translateY(-10px);
+        }
+        .viz-category i {
+            font-size: 3rem;
+            color: #007bff;
+            margin-bottom: 1rem;
+        }
+        .dashboard-container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+        .dashboard-placeholder {
+            background-color: #f0f0f0;
+            border: 2px dashed #007bff;
+            border-radius: 10px;
+            padding: 40px;
+        }
+        .btn-dashboard {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            transition: background-color 0.3s ease;
+        }
+        .btn-dashboard:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="top-header">
+            <div class="logo-container">
+                <img src="madiun_logo.png" alt="Logo Disdukcapil" class="logo">
+                <div class="site-title">DINAS KEPENDUDUKAN DAN PENCATATAN SIPIL KABUPATEN MADIUN</div>
+            </div>
+            <div class="contact-info">
+                <p>Email: disdukcapil@contoh.go.id | Telp: (0351) 467327</p>
+            </div>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="layanan.html" class="active">Layanan</a></li>
+                <li><a href="informasi.html">Informasi</a></li>
+                <li><a href="galeri.html">Galeri</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+                <li><a href="visualisasi-data.html">Visualisasi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <p><a href="index.html">Beranda</a> / Visualisasi Data</p>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+    <section class="visualization-section">
+        <div class="visualization-container">
+            <h1 class="page-title">Visualisasi Data Kependudukan</h1>
+            
+            <div class="viz-categories">
+                <div class="viz-category">
+                    <i class="fas fa-chart-bar"></i>
+                    <h3>Statistik Penduduk</h3>
+                    <p>Informasi demografis dan statistik kependudukan</p>
+                </div>
+                <div class="viz-category">
+                    <i class="fas fa-users"></i>
+                    <h3>Demografi</h3>
+                    <p>Analisis komposisi dan distribusi penduduk</p>
+                </div>
+                <div class="viz-category">
+                    <i class="fas fa-chart-pie"></i>
+                    <h3>Analisis Data</h3>
+                    <p>Visualisasi tren dan pola kependudukan</p>
+                </div>
+            </div>
+
+            <div class="dashboard-container">
+                <h2>Dashboard Interaktif</h2>
+                <p>Jelajahi data kependudukan Kabupaten Madiun secara real-time dan interaktif.</p>
+                
+                <div class="dashboard-placeholder">
+                    <h3>Dashboard Sedang Dalam Pengembangan</h3>
+                    <p>Silakan kunjungi langsung melalui link berikut:</p>
+                    <a 
+                        href="https://kabmadiun-disdukcapil.streamlit.app/" 
+                        target="_blank" 
+                        class="btn-dashboard"
+                    >
+                        Buka Dashboard
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Tentang Kami</h3>
+                <p>Dinas Kependudukan dan Pencatatan Sipil merupakan unsur pelaksana Pemerintah Daerah di bidang Kependudukan dan Pencatatan Sipil yang dipimpin oleh Kepala Dinas dan berkedudukan di bawah Walikota melalui Sekretaris Daerah.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Link Cepat</h3>
+                <a href="index.html">Beranda</a>
+                <a href="profil.html">Profil</a>
+                <a href="layanan.html">Layanan</a>
+                <a href="informasi.html">Informasi</a>
+                <a href="galeri.html">Galeri</a>
+                <a href="kontak.html">Kontak</a>
+            </div>
+            <div class="footer-col">
+                <h3>Kontak Kami</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Jl. Contoh No. 123, Kota</p>
+                <p><i class="fas fa-phone"></i> (0351) 467327</p>
+                <p><i class="fas fa-envelope"></i> disdukcapil@contoh.go.id</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 Dinas Kependudukan dan Pencatatan Sipil. Hak Cipta Dilindungi.
+        </div>
+    </footer>
+</body>
+</html>
